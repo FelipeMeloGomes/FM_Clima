@@ -14,24 +14,7 @@ Um app para visualizar o clima. <br/>
 </p>
 
 
-## ⚙️ Instalação dos pacotes essenciais.
 
-
-Instalar os pacotes: 
-
-```
-npm install
-```
-Iniciar o Front-End: 
-
-```
-npm run serve
-```
-Iniciar o Back-End:
-
-```
-npm run backend
-``` 
 
 
 ## 🚀 Tecnologias

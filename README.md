@@ -25,6 +25,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript.
 
 ## 📚 Conceitos aprendidos no projeto
+
+- Variáveis e Funções.
 - DOM.
 - API. 
 - Responsividade.

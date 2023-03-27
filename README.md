@@ -1,7 +1,7 @@
-<h1 align="center"> FM Burger </h1>
+<h1 align="center"> Clima </h1>
 
 <p align="center">
-Uma Loja fictícia de Hamburguês. <br/>
+Um app para visualizar o clima. <br/>
 </p>
 
 
@@ -10,7 +10,7 @@ Uma Loja fictícia de Hamburguês. <br/>
 <br>
 
 <p align="center">
-  <img src="https://github.com/FelipeMelogomes/Fmburger/blob/main/preview.png" width="100%">
+  <img src="https://github.com/FelipeMelogomes/Clima-Js/blob/main/layout.png" width="100%">
 </p>
 
 
@@ -40,30 +40,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS.
 - JavaScript.
-- Vuejs.
 
 ## 📚 Conceitos aprendidos no projeto
-
-- Front-end
-- Gerenciador de Pacotes (NPM).
-- JSON.
+- DOM.
+- API. 
 - Responsividade.
-- Criação de componentes e reutilização.
-- Framework Vuejs.
 
-## 🔖 Layout
-
-<a target="_blank" href="https://imgur.com/a/sxZcm6s">Confira o Layout aqui.</a>
-
-
-
-## ✔ Atualizações 
-
-Melhorias implementadas:
-
-- Adição de novas carnes e molhos.
-- Implementação de um verificação nos inputs.
-- Melhorias na responsividade.
 
 
 ---

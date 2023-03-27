@@ -28,6 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - DOM.
 - API. 
 - Responsividade.
+- Animações CSS.
 
 
 

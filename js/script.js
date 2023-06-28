@@ -1,27 +1,25 @@
-const apiKey              = "edef938077466df0a6ddd2450d699bc2";
-const apiCountryURL       = "https://countryflagsapi.com/png/";
-const apiUnsplash         = "https://source.unsplash.com/1920x1080/?";
+const apiKey = "edef938077466df0a6ddd2450d699bc2";
+const apiCountryURL = "https://countryflagsapi.com/png/";
+const apiUnsplash = "https://source.unsplash.com/1920x1080/?";
 
+const cityInput = document.querySelector("#city-input");
+const searchBtn = document.querySelector("#search");
 
-const cityInput           = document.querySelector("#city-input");
-const searchBtn           = document.querySelector("#search");
+const cityElement = document.querySelector("#city");
+const tempElement = document.querySelector("#temperature span");
+const descElement = document.querySelector("#description");
+const weatherIconElement = document.querySelector("#weather-icon");
+const countryElement = document.querySelector("#country");
+const umidityElement = document.querySelector("#umidity span");
+const windElement = document.querySelector("#wind span");
 
-
-const cityElement         = document.querySelector("#city");
-const tempElement         = document.querySelector("#temperature span");
-const descElement         = document.querySelector("#description");
-const weatherIconElement  = document.querySelector("#weather-icon");
-const countryElement      = document.querySelector("#country");
-const umidityElement      = document.querySelector("#umidity span");
-const windElement         = document.querySelector("#wind span");
-
-const weatherContainer    = document.querySelector("#weather-data");
+const weatherContainer = document.querySelector("#weather-data");
 
 const errorMessageContainer = document.querySelector("#error-message");
-const loader                = document.querySelector("#loader");
+const loader = document.querySelector("#loader");
 
 const suggestionContainer = document.querySelector("#suggestions");
-const suggestionButtons   = document.querySelectorAll("#suggestions button");
+const suggestionButtons = document.querySelectorAll("#suggestions button");
 
 // Loader
 const toggleLoader = () => {
@@ -41,12 +39,10 @@ const getWeatherData = async (city) => {
     return data;
 };
 
-
 // Tratamento de erro
 const showErrorMessage = () => {
     errorMessageContainer.classList.remove("hide");
 };
-
 
 const hideInformation = () => {
     errorMessageContainer.classList.add("hide");
@@ -74,7 +70,7 @@ const showWeatherData = async (city) => {
     );
     countryElement.setAttribute("src", apiCountryURL + data.sys.country);
     umidityElement.innerText = `${data.main.humidity}%`;
-    windElement.innerText    = `${data.wind.speed}km/h`;
+    windElement.innerText = `${data.wind.speed}km/h`;
 
     // Change bg image
     // troca da imagem de fundo
@@ -82,7 +78,6 @@ const showWeatherData = async (city) => {
 
     weatherContainer.classList.remove("hide");
 };
-
 
 searchBtn.addEventListener("click", async (e) => {
     e.preventDefault();
@@ -92,7 +87,6 @@ searchBtn.addEventListener("click", async (e) => {
     showWeatherData(city);
 });
 
-
 cityInput.addEventListener("keyup", (e) => {
     if (e.code === "Enter") {
         const city = e.target.value;
@@ -100,7 +94,6 @@ cityInput.addEventListener("keyup", (e) => {
         showWeatherData(city);
     }
 });
-
 
 // Sugestões
 suggestionButtons.forEach((btn) => {

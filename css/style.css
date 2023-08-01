@@ -11,9 +11,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
     background-position: center;
     background-size: cover;
+    width: 100vw;
+    overflow: "hidden";
 }
 
 .hide {
@@ -126,7 +127,7 @@ body {
     }
 }
 
-/* Sugestões */
+/* Sugestoes*/
 #suggestions {
     display: flex;
     flex-wrap: wrap;

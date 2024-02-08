@@ -16,13 +16,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 -   HTML e CSS.
 -   JavaScript.
+-   Api.
 
 ## 📚 Conceitos aprendidos no projeto
 
 -   Variáveis e Funções.
--   DOM.
+-   Manipulação do DOM.
 -   API.
 -   Responsividade.
 -   Animações CSS.
+-   Tratamento de dados do usuário.
 
 ---

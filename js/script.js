@@ -1,6 +1,6 @@
 const apiKey = "edef938077466df0a6ddd2450d699bc2";
 const apiCountryURL = "https://countryflagsapi.com/png/";
-const apiUnsplash = "https://source.unsplash.com/1920x1080/?";
+const apiUnsplash = "https://source.unsplash.com/1366x768/?";
 
 const cityInput = document.querySelector("#city-input");
 const searchBtn = document.querySelector("#search");
@@ -13,7 +13,6 @@ const countryElement = document.querySelector("#country");
 const umidityElement = document.querySelector("#umidity span");
 const windElement = document.querySelector("#wind span");
 
-
 const weatherContainer = document.querySelector("#weather-data");
 
 const errorMessageContainer = document.querySelector("#error-message");
@@ -21,6 +20,11 @@ const loader = document.querySelector("#loader");
 
 const suggestionContainer = document.querySelector("#suggestions");
 const suggestionButtons = document.querySelectorAll("#suggestions button");
+
+// remove os acentos
+const removeAccents = (str) => {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+};
 
 // Loader
 const toggleLoader = () => {
@@ -83,20 +87,20 @@ const showWeatherData = async (city) => {
 searchBtn.addEventListener("click", async (e) => {
     e.preventDefault();
 
-    const city = cityInput.value;
+    const city = removeAccents(cityInput.value.trim());
 
     showWeatherData(city);
 });
 
 cityInput.addEventListener("keyup", (e) => {
     if (e.code === "Enter") {
-        const city = e.target.value;
+        const city = removeAccents(e.target.value.trim());
 
         showWeatherData(city);
     }
 });
 
-// Sugestões
+// suggestions
 suggestionButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
         const city = btn.getAttribute("id");

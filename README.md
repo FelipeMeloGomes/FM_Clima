@@ -1,7 +1,7 @@
-<h1 align="center"> Clima </h1>
+<h1 align="center">FM  Clima </h1>
 
 <p align="center">
-Um app para visualizar o clima. <br/>
+Uma página para visualizar o clima de sua cidade. <br/>
 </p>
 
 <br>

@@ -7,7 +7,7 @@ Um app para visualizar o clima. <br/>
 <br>
 
 <p align="center">
-  <img src="https://github.com/FelipeMelogomes/Clima-Js/blob/main/layout.png" width="100%">
+  <img src="https://portfoliofmg.netlify.app/static/FM-Clima.caa038f527.webp" width="100%">
 </p>
 
 ## 🚀 Tecnologias

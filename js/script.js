@@ -21,12 +21,12 @@ const loader = document.querySelector("#loader");
 const suggestionContainer = document.querySelector("#suggestions");
 const suggestionButtons = document.querySelectorAll("#suggestions button");
 
-// remove os acentos
+// remove accents
 const removeAccents = (str) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 };
 
-// Loader
+// loader
 const toggleLoader = () => {
     loader.classList.toggle("hide");
 };
@@ -44,7 +44,7 @@ const getWeatherData = async (city) => {
     return data;
 };
 
-// Tratamento de erro
+// Error Handling
 const showErrorMessage = () => {
     errorMessageContainer.classList.remove("hide");
 };
@@ -78,7 +78,6 @@ const showWeatherData = async (city) => {
     windElement.innerText = `${data.wind.speed}km/h`;
 
     // Change bg image
-    // troca da imagem de fundo
     document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
 
     weatherContainer.classList.remove("hide");
